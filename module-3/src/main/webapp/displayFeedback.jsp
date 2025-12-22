@@ -1,7 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%-- 
-    William Stearns | Date: December 19, 2025 | CSD430 Module 3
-    Description: Displays submitted form data in a table format.
+    William Stearns 
+    December 19, 2025 
+    CSD430 Module 3
+    Displays submitted form data in a table format.
 --%>
 <!DOCTYPE html>
 <html lang="en">
