@@ -101,4 +101,18 @@ public class MovieBean implements Serializable {
             return false;
         }
     }
+    
+ // MODULE 9: Delete Operation
+    public boolean deleteMovie(int id) {
+        String sql = "DELETE FROM will_movies_data WHERE movie_id = ?";
+        try (Connection conn = getConnection();
+             PreparedStatement pstmt = conn.prepareStatement(sql)) {
+            pstmt.setInt(1, id);
+            int rowsDeleted = pstmt.executeUpdate();
+            return rowsDeleted > 0;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return false;
+        }
+    }
 }
